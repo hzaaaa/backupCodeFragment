@@ -1,0 +1,28 @@
+@import "../serviceManagement/index";
+.picker-item {
+  flex: 1;
+  :deep(.el-date-editor) {
+    width: 100%;
+    .el-input__wrapper {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}
+.separator {
+  margin: 0 10px;
+}
+.needHide {
+  height: 152px;
+}
+.height-fade-enter-active,
+.height-fade-leave-active {
+  transition: all 0.3s ease;
+}
+
+// 再写一次 防止高度覆盖
+.height-fade-enter-from,
+.height-fade-leave-to {
+  height: 0;
+  opacity: 0;
+}

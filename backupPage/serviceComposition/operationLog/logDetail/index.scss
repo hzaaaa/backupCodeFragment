@@ -1,0 +1,15 @@
+.common-layout {
+  // display: flex;
+  // height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+
+  // padding-top: 20px;
+  .badge-item {
+    padding-right: 10px;
+    :deep(.el-badge__content) {
+      // font-size: 10px;
+    }
+  }
+}
